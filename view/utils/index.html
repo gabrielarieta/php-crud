@@ -1,0 +1,21 @@
+<html lang="pt-BR">
+    <head>
+        <link rel="stylesheet" type="text/css" href="view/utils/css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    </head>
+    <body>
+        <div id="sidenav" class="sidenav">
+            <button onclick="openTab('user')">Usuários</button>
+            <button onclick="openTab('color')">Cores</button>
+            <button onclick="openTab('color_user')">Cores por Usuários</button>
+        </div>
+        <div id="sidenav_button">
+            <span class="sidenavOpener" onclick="openNav()">&#9776</span>
+        </div>
+        <div id="tab_content" onclick="closeNav()"></div>
+    </body>        
+    <div class="overlay"></div>
+</html>
+<script src="view/utils/js/index.js"> </script>

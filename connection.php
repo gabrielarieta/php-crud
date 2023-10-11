@@ -29,4 +29,16 @@ class Connection {
 
         return $result;
     }
+
+    public function createOrUpdate($query, $data) {
+        $pdo = $this->getConnection();
+        $result = $pdo->prepare($query);
+        return $result->execute($data);
+    }
+
+    public function delete($query) {
+        $pdo = $this->getConnection();
+        $result = $pdo->prepare($query);
+        return $result->execute();
+    }
 }
